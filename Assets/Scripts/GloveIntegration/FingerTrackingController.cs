@@ -40,12 +40,22 @@ namespace DentalVR.GloveIntegration
         public const int PINKY  = 4;
 
         // ── Unity lifecycle ───────────────────────────────────────────────────
+        private void Start()
+        {
+            // Disable this component when SteamVR is not the active XR runtime so it
+            // does not generate spurious warnings on Meta Quest / Oculus builds.
+            if (GloveInputManager.Instance != null && !GloveInputManager.Instance.IsGlovesAvailable)
+            {
+                enabled = false;
+                return;
+            }
+        }
+
         private void Update()
         {
             if (handSkeleton == null)
             {
-                Debug.LogWarning($"[FingerTrackingController] No SteamVR_Behaviour_Skeleton " +
-                                 $"assigned on {gameObject.name}.");
+                // Only log once; persistent per-frame warnings can hide other messages.
                 return;
             }
 
