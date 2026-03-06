@@ -1,0 +1,54 @@
+{
+  "name": "LucidGloves — Dental VR (Left Hand)",
+  "controller_type": "lucidgloves",
+  "category": "steamvr_input",
+  "bindings": {
+    "/actions/dental": {
+      "sources": [
+        {
+          "path": "/user/hand/left/input/skeleton/left",
+          "mode": "skeleton",
+          "inputs": {
+            "skeleton": {
+              "output": "/actions/dental/in/SkeletonLeft"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "button",
+          "inputs": {
+            "click": {
+              "output": "/actions/dental/in/GrabLeft"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "button",
+          "inputs": {
+            "click": {
+              "output": "/actions/dental/in/PinchLeft"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/pose/raw",
+          "mode": "pose",
+          "inputs": {
+            "pose": {
+              "output": "/actions/dental/in/PoseLeft"
+            }
+          }
+        }
+      ],
+      "haptics": [
+        {
+          "path": "/user/hand/left/output/haptic",
+          "output": "/actions/dental/out/HapticLeft"
+        }
+      ]
+    }
+  },
+  "description": "Default bindings for the left LucidGlove in the Dental VR simulation."
+}

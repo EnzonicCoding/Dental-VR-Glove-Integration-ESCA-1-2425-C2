@@ -1,0 +1,39 @@
+# Unity build artifacts
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# VisualStudio / Rider cache
+.vs/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity auto-generated files
+/Assets/SteamVR_Input/
+/Assets/SteamVR_Resources/
+
+# Mac DS_Store
+.DS_Store
+
+# Node / npm (if any tooling is added later)
+node_modules/
+
+# OS generated
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,86 @@
+{
+  "default_bindings": [
+    {
+      "controller_type": "lucidgloves",
+      "binding_url": "default_bindings_lucidgloves_left.json"
+    },
+    {
+      "controller_type": "lucidgloves",
+      "binding_url": "default_bindings_lucidgloves_right.json"
+    }
+  ],
+  "actions": [
+    {
+      "name": "/actions/dental/in/GrabLeft",
+      "type": "boolean",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/in/GrabRight",
+      "type": "boolean",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/in/PinchLeft",
+      "type": "boolean",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/in/PinchRight",
+      "type": "boolean",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/in/SkeletonLeft",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/dental/in/SkeletonRight",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/dental/in/PoseLeft",
+      "type": "pose",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/in/PoseRight",
+      "type": "pose",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/out/HapticLeft",
+      "type": "vibration",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/dental/out/HapticRight",
+      "type": "vibration",
+      "requirement": "suggested"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/dental",
+      "usage": "leftright"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/dental": "Dental Simulation",
+      "/actions/dental/in/GrabLeft":    "Grab (Left)",
+      "/actions/dental/in/GrabRight":   "Grab (Right)",
+      "/actions/dental/in/PinchLeft":   "Pinch (Left)",
+      "/actions/dental/in/PinchRight":  "Pinch (Right)",
+      "/actions/dental/in/SkeletonLeft":  "Hand Skeleton (Left)",
+      "/actions/dental/in/SkeletonRight": "Hand Skeleton (Right)",
+      "/actions/dental/in/PoseLeft":    "Hand Pose (Left)",
+      "/actions/dental/in/PoseRight":   "Hand Pose (Right)",
+      "/actions/dental/out/HapticLeft":  "Haptic Feedback (Left)",
+      "/actions/dental/out/HapticRight": "Haptic Feedback (Right)"
+    }
+  ]
+}
